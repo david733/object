@@ -1,0 +1,45 @@
+{
+    "Type": "MergeIncAppend",
+    "Description": "",
+    "Inputs": {
+        "Master": {
+            "Type": "*"
+        },
+        "Paths": {
+            "Type": "*"
+        },
+        "Slave": {
+            "Type": "*"
+        }
+    },
+    "Outputs": {
+        "Found": {
+            "Type": "*"
+        },
+        "Master": {
+            "Type": "*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "MergeIncAppend.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Master",
+            "Slave",
+            "Paths"
+        ],
+        "OutputOrder": [
+            "Master",
+            "Found"
+        ]
+    },
+    "Tags": [],
+    "UserTags": []
+}
